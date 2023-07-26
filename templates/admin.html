@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login Page</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 60%;
+      width:30%;
+      margin-top: 9%;
+      padding: 5%;
+      border-radius: 30px;
+      background: linear-gradient(to right, lightcyan, #fafbfc);
+    }
+
+    .container:hover {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 60%;
+      width:30%;
+      margin-top: 9%;
+      padding: 5%;
+      border-radius: 30px;
+      background: linear-gradient(to right, #fcfdfd, lightcyan);
+    }
+    #a:hover{}
+  </style>
+</head>
+<body style="background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(79,0,0,1) 100%);">
+  <div class="container">
+    <div class="login-content">
+      <h2 style="color:#491b1b">Sign-In</h2>
+      <p class="text-danger">{{ response }}</p>
+      <form action="/admin" method="POST">
+        <div class="form-group">
+          <label for="email"><strong>Email</strong></label>
+          <input id="a"type="email" placeholder="Enter Email" name="email" class="form-control" style="border-radius: 10px;padding: 10%; width:100%";/>
+          <span class="text-danger"></span>
+        </div>
+        <div class="form-group">
+          <label for="password"><strong>Password</strong></label>
+          <input type="password" placeholder="Enter Password" name="password" class="form-control" style="border-radius: 10px;padding: 10%; width:100%;" />
+          <span class="text-danger"></span>
+        </div>
+        <button type="submit" class="btn btn-success btn-block" style="margin-top: 16%;border-radius: 30px;padding: 5%">Log in</button>
+      </form>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
